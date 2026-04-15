@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #43e97b, #38f9d7);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .score {
+            text-align: center;
+            font-size: 28px;
+            margin: 20px 0;
+            color: #2c7;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h3 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .matched li {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .missing li {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .suggestions li {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            text-align: center;
+            padding: 10px;
+            background: #38f9d7;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-btn:hover {
+            background: #2ed1b2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📊 Resume Analysis Result</h1>
+
+    <!-- Score -->
+    <div class="score">
+        Resume Score: {{ score }}%
+    </div>
+
+    <!-- Matched Skills -->
+    <div class="section matched">
+        <h3>✅ Matched Skills</h3>
+        <ul>
+            {% for skill in matched %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Missing Skills -->
+    <div class="section missing">
+        <h3>❌ Missing Skills</h3>
+        <ul>
+            {% for skill in missing %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Suggestions -->
+    <div class="section suggestions">
+        <h3>💡 Suggestions</h3>
+        <ul>
+            {% for tip in suggestions %}
+                <li>{{ tip }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/" class="back-btn">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>

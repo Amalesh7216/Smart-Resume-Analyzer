@@ -1,0 +1,59 @@
+{
+  "Data Scientist": [
+    "Python",
+    "Machine Learning",
+    "Data Analysis",
+    "Statistics",
+    "Pandas",
+    "Numpy",
+    "Deep Learning"
+  ],
+  "Web Developer": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB"
+  ],
+  "Software Engineer": [
+    "Java",
+    "Python",
+    "OOP",
+    "Data Structures",
+    "Algorithms",
+    "Git",
+    "SQL"
+  ],
+  "AI Engineer": [
+    "Python",
+    "Machine Learning",
+    "Deep Learning",
+    "NLP",
+    "TensorFlow",
+    "Keras"
+  ],
+  "Data Analyst": [
+    "Excel",
+    "SQL",
+    "Python",
+    "Power BI",
+    "Tableau",
+    "Data Visualization"
+  ],
+  "Backend Developer": [
+    "Node.js",
+    "Express",
+    "SQL",
+    "API Development",
+    "Authentication"
+  ],
+  "Frontend Developer": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Bootstrap"
+  ]
+}
